@@ -4,10 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="dark.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3cabeecb83.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
-    <h1>Sylvester Mitchell</h1>
+    <header>
+      <nav class="mobile mobile-nav">
+        <ul>
+          <li class="nav-left"><a href="#">Jodi DeAngelis</a></li>
+          <li class="nav-right" id="hamburger" onclick="menuToggle()">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Menu -->
+    <div id="hamburger-menu" class="hamburger-menu">
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="theme" onclick="theme()">
+          <i class="fa-light fa-moon"></i>
+          <i class="fa-light fa-sun"></i>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-left">
+        <h1>Frontend Developer</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio
+          labore, voluptatum veniam ea est deserunt deleniti ipsam quod enim
+          pariatur non eaque vitae. Sunt, aperiam.
+        </p>
+        <a href="#projects"><span>view my projects</span></a>
+      </div>
+      <div class="hero-right"></div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1 class="section-title">Skills</h1>
+      <div class="icons">
+        <img src="./images/figma.png" alt="Figma" />
+        <img src="./images/html.png" alt="HTML" />
+        <img src="./images/css.png" alt="CSS" />
+        <img src="./images/git.png" alt="Git" />
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1 class="section-title">Projects</h1>
+      <ul class="projects">
+        <li class="project">
+          <span class="project-title">Project 1</span>
+          <div class="overlay"></div>
+          <img src="./images/project.png" alt="project 1" />
+        </li>
+        <li class="project">
+          <span class="project-title">Project 2</span>
+          <div class="overlay"></div>
+          <img src="./images/project.png" alt="project 2" />
+        </li>
+        <li class="project">
+          <span class="project-title">Project 3</span>
+          <div class="overlay"></div>
+          <img src="./images/project.png" alt="project 3" />
+        </li>
+        <li class="project">
+          <span class="project-title">Project 4</span>
+          <div class="overlay"></div>
+          <img src="./images/project.png" alt="project 4" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-left">
+          <h1 class="section-title">Got a Project?</h1>
+          <h3>Contact Me</h3>
+          <a href="mailto:jodi.deangelis3@gmail.com"
+            >jodi.deangelis3@gmail.com</a
+          >
+          <div class="social-links">
+            <a href="https://github.com/jodideangelis" target="_blank">
+              <img src="./images/github_icon.png" alt="Github"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/jodi-deangelis/"
+              target="_blank"
+              ><img src="./images/linkedIn_icon.png" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            class="form-contact"
+          >
+            <div class="form-group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your message..."
+              ></textarea>
+            </div>
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Loosely designed in <span>Figma</span> and coded in
+        <span>Visual Studio Code</span> by yours truly. Built with
+        <span>HTML</span> & <span>CSS</span>, deployed with
+        <span>Netlify</span>.
+      </p>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>

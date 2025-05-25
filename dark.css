@@ -1,0 +1,19 @@
+.dark-mode {
+  background-color: #0f1044;
+}
+
+.dark-mode .hamburger-menu .fa-moon {
+  display: none;
+}
+
+.dark-mode .hamburger-menu .fa-sun {
+  display: block;
+}
+
+.dark-mode .mobile-nav a {
+  color: #fff;
+}
+
+.dark-mode .nav-right span {
+  background-color: #fff;
+}
