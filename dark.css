@@ -1,19 +1,49 @@
 .dark-mode {
-  background-color: #0f1044;
+  background-color: var(--dark-color);
+  color: #fff;
 }
 
-.dark-mode .hamburger-menu .fa-moon {
+.dark-mode a {
+  color: #fff;
+}
+
+.dark-mode h1 {
+  font-family: var(--tertiary-text);
+  font-size: 50px;
+  line-height: 65px;
+}
+
+.dark-mode .mobile-nav {
+  background-color: var(--dark-color);
+}
+
+.dark-mode .fa-moon,
+.dark-mode .dark-icon {
   display: none;
 }
 
-.dark-mode .hamburger-menu .fa-sun {
+.dark-mode .hamburger-menu li a,
+.dark-mode .fa-sun {
   display: block;
-}
-
-.dark-mode .mobile-nav a {
-  color: #fff;
+  color: #000;
 }
 
 .dark-mode .nav-right span {
   background-color: #fff;
+}
+
+/* Hero */
+.dark-mode .hero-left h1 {
+  font-size: 65px;
+}
+
+/* Contact */
+.dark-mode .light-icon {
+  display: inline;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  border-color: #fff;
+  color: #fff;
 }
