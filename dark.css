@@ -24,7 +24,7 @@
 
 .dark-mode .hamburger-menu li a,
 .dark-mode .fa-sun {
-  display: block;
+  display: block !important;
   color: #000;
 }
 
@@ -46,4 +46,43 @@
 .dark-mode textarea {
   border-color: #fff;
   color: #fff;
+}
+
+@media (min-width: 961px) {
+  .dark-mode .btn {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .dark-mode .btn:hover {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .dark-mode .btn:before,
+  .dark-mode .btn:after {
+    background: #fff;
+  }
+
+  .dark-mode .desktop-nav {
+    background-color: var(--dark-color);
+    border-color: #fff;
+  }
+
+  .dark-mode .desktop-nav i {
+    padding-top: 5px;
+    color: #fff;
+  }
+
+  /* Hero */
+  .dark-mode .hero-left h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .dark-mode .hero-right h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+  }
 }

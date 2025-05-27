@@ -19,6 +19,7 @@
   </head>
   <body>
     <header>
+      <!-- Mobile Nav -->
       <nav class="mobile mobile-nav">
         <ul>
           <li class="nav-left"><a href="#">Jodi DeAngelis</a></li>
@@ -27,6 +28,22 @@
             <span class="middle"></span>
             <span class="bottom"></span>
           </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop desktop-nav">
+        <div class="nav-left">
+          <a href="#">Jodi DeAngelis</a>
+        </div>
+        <ul class="nav-right">
+          <li class="theme" onclick="theme()">
+            <i class="fa-light fa-moon"></i>
+            <i class="fa-light fa-sun"></i>
+          </li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -53,19 +70,64 @@
           labore, voluptatum veniam ea est deserunt deleniti ipsam quod enim
           pariatur non eaque vitae. Sunt, aperiam.
         </p>
-        <a href="#projects"><span>view my projects</span></a>
+        <a class="btn" href="#projects"><span>view my projects</span></a>
       </div>
-      <div class="hero-right"></div>
+      <div class="desktop hero-right">
+        <h1>Contact Me</h1>
+        <form name="contact_desktop" method="POST" netlify class="form-contact">
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              id="desktop_name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="desktop_email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              id="desktop_message"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">SEND</button>
+        </form>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
       <h1 class="section-title">Skills</h1>
+      <p>Web technologies I am proficient at:</p>
       <div class="icons">
-        <img src="./images/figma.png" alt="Figma" />
-        <img src="./images/html.png" alt="HTML" />
-        <img src="./images/css.png" alt="CSS" />
-        <img src="./images/git.png" alt="Git" />
+        <a href="https://www.figma.com" target="_blank">
+          <img src="./images/figma.png" alt="Figma" />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+        >
+          <img src="./images/html.png" alt="HTML" />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          target="_blank"
+        >
+          <img src="./images/css.png" alt="CSS" />
+        </a>
+        <a href="https://git-scm.com/" target="_blank">
+          <img src="./images/git.png" alt="Git" />
+        </a>
       </div>
     </section>
 
