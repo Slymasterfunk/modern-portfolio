@@ -249,19 +249,24 @@ section {
   gap: 8px;
   padding: 0 16px 16px 0;
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
 .project {
   position: relative;
   flex-shrink: 0;
   width: 95%;
+  scroll-snap-align: start;
 }
 
-.project-title {
+.project-info {
   z-index: 2;
   position: absolute;
   left: 20px;
   bottom: 10px;
+}
+
+.project-title {
   color: #fff;
   font-size: 30px;
 }
@@ -280,6 +285,12 @@ section {
 }
 
 /* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .contact h3 {
   font-size: 25px;
 }
@@ -292,6 +303,7 @@ section {
 
 .contact-right {
   padding-top: 22px;
+  margin: 0;
 }
 
 input,
@@ -439,9 +451,63 @@ footer span:hover {
     filter: grayscale(0%);
   }
 
+  /* Projects */
+  .project-info {
+    left: 100px;
+    bottom: 70px;
+  }
+
+  .project-title {
+    font-size: 50px;
+  }
+
+  .project-description {
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .overlay {
+    height: 99%;
+  }
+
   /* Contact */
+  #contact {
+    margin-bottom: 100px;
+  }
+
+  .contact {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .contact-left {
+    width: 40%;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .contact-left h3 {
+    padding-top: 30px;
+    font-size: 40px;
+  }
+
+  .contact-left a {
+    font-size: 25px;
+  }
+
+  .contact-right {
+    width: 40%;
+    margin-right: 0;
+  }
+
   .form-contact input,
   .form-contact textarea {
     border-width: 2px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 18px;
   }
 }
